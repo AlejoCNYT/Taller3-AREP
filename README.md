@@ -58,7 +58,7 @@ Taller3-AREP-main/
 ```
 
 ## Autores
-- [Tu Nombre]
+- Daniel Alejandro Acero
 
 ## Licencia
 Este proyecto se distribuye bajo la licencia MIT.
