@@ -23,7 +23,9 @@ cd Taller3-AREP-main
 ### Compilar y ejecutar
 ```sh
 mvn clean package
-java -cp target/classes co.edu.eci.arep.appsvr.EciBoot co.edu.eci.arep.appsvr.GreetingController
+mvn dependency:copy-dependencies
+
+java -cp "target/classes;target/dependency/*" co.edu.eci.arep.appsvr.EciBoot co.edu.eci.arep.appsvr.GreetingController
 ```
 ![imagen](https://github.com/user-attachments/assets/f962a8f0-b91c-44ff-924e-e08c64f93580)
 
