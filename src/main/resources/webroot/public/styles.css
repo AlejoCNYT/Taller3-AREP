@@ -1,0 +1,39 @@
+body {
+    background: url('/images/background.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: black;
+}
+
+.container {
+    margin-top: 50px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+button {
+    display: block;
+    width: 150px;
+    margin: 10px auto;
+    padding: 10px;
+    background: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: darkblue;
+}

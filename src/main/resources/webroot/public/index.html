@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Framework</title>
+    <style>
+        body {
+            background-image: url("/images/background.png");
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            color: black;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            margin-top: 50px;
+        }
+        .logo {
+            width: 150px;
+            height: auto;
+            margin-top: 20px;
+        }
+        button {
+            display: block;
+            width: 150px;
+            margin: 10px auto;
+            padding: 10px;
+            background: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: darkblue;
+        }
+    </style>
+</head>
+<body>
+<img src="/images/logo.png" alt="Logo" class="logo">
+<div class="container">
+    <h1>Welcome to My Web Framework</h1>
+    <p>This is a simple static page served by our Java web framework.</p>
+    <button onclick="sayHello()">Say Hello</button>
+    <button onclick="getPi()">Get PI</button>
+</div>
+<script>
+    function sayHello() {
+        alert("Hello from My Web Framework!");
+    }
+
+    function getPi() {
+        fetch('/pi') // Verifica que esta ruta coincida con la de tu servidor
+            .then(response => response.text())
+            .then(data => alert("PI: " + data))
+            .catch(error => console.error("Error:", error));
+    }
+</script>
+</body>
+</html>
