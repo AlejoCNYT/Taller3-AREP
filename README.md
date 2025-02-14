@@ -27,6 +27,12 @@ java -cp "target/classes;target/dependency/reflections-0.10.2.jar" co.edu.eci.fr
 ```
 ![imagen](https://github.com/user-attachments/assets/f962a8f0-b91c-44ff-924e-e08c64f93580)
 
+**Search on navigator:**
+  ```sh
+   http://localhost:8080/index.html
+   ```
+
+![imagen](https://github.com/user-attachments/assets/85636952-ff08-4e96-8bed-84c2a4a475df)
 
 ## Uso del Framework IoC
 El servidor permite registrar y manejar controladores de la siguiente manera:
